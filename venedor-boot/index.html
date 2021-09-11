@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venedor</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <section class="container-fluid section1">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav class="nav justify-content">
+                        <ul class="nav nav-list">
+                            <li class="nav-item"><a class="nav-link" href="#link"><img src="media/pencil-logo.png" alt="" class="img-fluid"> My Wishlist (0)</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link"><img src="media/user-logo.png" alt="" class="img-fluid"> My Account</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link"><img src="media/cart-logo.png" alt="" class="img-fluid"> Shopping Cart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link"><img src="media/checkout-logo.png" alt="" class="img-fluid"> Checkout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="login">
+                        <p>Welcome visitor you can <a href="#link" class="login-link">login</a> or <a href="#link" class="login-link">create an account</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section2">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="media/venedor-logo.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="container-fliud">
+                        <div class="row buttons">
+                            <button class="button us-dollar">US-Dollar</button>
+                            <div class="dropdown language button">
+                                <a class="btn dropdown-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="media/language-logo.png" alt=""> English
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item dropdown-link" href="#"><img src="media/language-logo.png" alt=""> English</a>
+                                  <a class="dropdown-item dropdown-link" href="#"><img src="media/language-logo.png" alt=""> English</a>
+                                  <a class="dropdown-item dropdown-link" href="#"><img src="media/language-logo.png" alt=""> English</a>
+                                </div>
+                            </div>
+                            <button class="button items"><img src="media/button-cart.png" alt=""> 0 item(s) - $0.00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section3">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav class="nav">
+                        <ul class="nav nav-list">
+                            <li class="nav-item"><a class="nav-link" href="#link">fashion</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link">electronics</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link">gifts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link">books</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link">at home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#link">music</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <form action="#link">
+                        <div class="search-bar">
+                            <input type="search" placeholder="Search here..." class="search">
+                            <a href="#link">
+                            <img src="media/search-logo.jpg" class="search-logo">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- close header -->
+
+    <!-- main -->
+    <main class="main" id="main">
+        <section class="container-fluid section1">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner container-fluid">
+                  <div class="carousel-item active row">
+                    <img src="media/venedor-model.png" class="d-block venedor-model" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="new">New</h2>
+                      <h2 class="men-collection">Men Collection</h2>
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur et a facere excepturi. Commodi nulla recusandae et sed omnis tempore temporibus, exercitationem neque qui non mollitia laborum aperiam hic atque, officia dicta? Dolor.</p>
+                      <button class="button shop-now">Shop Now</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item row">
+                    <img src="media/venedor-model.png" class="d-block venedor-model" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="new">New</h2>
+                      <h2 class="men-collection">Men Collection</h2>
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur et a facere excepturi. Commodi nulla recusandae et sed omnis tempore temporibus, exercitationem neque qui non mollitia laborum aperiam hic atque, officia dicta? Dolor.</p>
+                      <button class="button shop-now">Shop Now</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item row">
+                    <img src="media/venedor-model.png" class="d-block venedor-model" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="new">New</h2>
+                      <h2 class="men-collection">Men Collection</h2>
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur et a facere excepturi. Commodi nulla recusandae et sed omnis tempore temporibus, exercitationem neque qui non mollitia laborum aperiam hic atque, officia dicta? Dolor.</p>
+                      <button class="button shop-now">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="container-fluid section2">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="media/free-shipping.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/sale.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/new-arrivals.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h2 class="latest">Latest</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <p>Buy discount items from the latest collections of world brands.</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/bracelet.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/jacket.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/gloves.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/sweater.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/heel.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/chanel-bag.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/blue-shoes.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/trench.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/heel.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/chanel-bag.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/blue-shoes.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/trench.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">                
+                        <h2 class="welcome-to-venedor">Welcome to Venedor</h2>
+                        <p class="text">Venedor is a fully responsive PSD theme designed for all types of platforms: WooCommerce, Magento, OpenCart, PrestaShop and other. Based on Bootstrap's 12 column 1200px responsive grid Template. Great looks on desktops, tablets and mobiles.</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro maiores, veniam cupiditate voluptate quae natus, iusto ea adipisci vero voluptates ipsa alias! Nam esse, alias voluptas ullam nihil tempora id neque quos cum omnis, eligendi obcaecati voluptatibus modi quaerat ducimus ab inventore harum ipsum illo dolores! inventore!
+                        <a href="#link" class="promo-link">Buy Venedor Theme!</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="media/welcome-to-venedor.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="best-sellers">Best Sellers</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <p>Special offers and biggest discounts for the most popular products.</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/heel.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/chanel-bag.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/blue-shoes.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/trench.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/heel.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/chanel-bag.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/blue-shoes.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/trench.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/heel.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jewelry Bracelet Cara Accessories</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/chanel-bag.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Jessica London Short Trench Coat</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/blue-shoes.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Mocca Stretch Leather Gloves</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="div">
+                                        <img src="media/trench.jpg" class="d-block" alt="...">
+                                    </div>
+                                    <p>Limited Edition Knitted Sweater</p>
+                                    <button class="button add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="manufacturers">Manufacturers</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <hr>
+                    </div>
+                </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="media/brand-logo.jpg" class="d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- close main -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <section class="container-fluid section1">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="sign-up">sign up to receive the latest fashion news</p>
+                </div>
+                <div class="col-md-6 sub-section2">
+                    <input type="email" placeholder="Enter your email address" id="sign-up-bar">
+                    <input type="submit" value="sign up" class="sign-up-submit">
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section2">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>My Account</h2>
+                    <ul>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">My account</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Personal information</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Adresses</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Discount</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Orders History</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Your Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Information</h2>
+                    <ul>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">New products</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Top sellers</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Specials</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Manufacturers</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Suppliers</a></li>
+                        <li class="footer-item"><a class="footer-list-link" href="#link">Our stores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>From Twitter</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem! Odio voluptate ad numquam vitae. <a href="#link">http://t.co/MqacjST476</a>
+                    </p>
+                    <p class="time">about 2 hours ago</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi sunt sequi.
+                    <a href="#link">http://t.co/MqacjST476</a> Lorem, ipsum.</p>
+                    <p class="time">about 3 hours ago</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>facebook</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="button like"><img src="media/thumbs-up.png" alt="" class="thumbs-up"> Like!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <p class="people">1564 people like <a href="#link">PromoKit</a></p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="media/anna.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Anna</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="media/tom.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Tom</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="media/Antuan.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Antuan</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="media/Milla.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Milla</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="media/Justine.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Justine</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="media/Maria.jpg" alt="placeholder img" class="img-fluid" />
+                                <p class="name">Maria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid section3">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#link"><img src="media/facebook.png"></a>
+                    <a href="#link"><img src="media/twitter.png"></a>
+                    <a href="#link"><img src="media/rss.png"></a>
+                    <a href="#link"><img src="media/twosquares.png"></a>
+                    <a href="#link"><img src="media/linkedin.png"></a>
+                    <a href="#link"><img src="media/twodots.png"></a>
+                    <a href="#link"><img src="media/skype.png"></a>
+                    <a href="#link"><img src="media/mail.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <p class="colophon-text">&copy; 2012 Powered by WooCommerce&trade;. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- close footer -->
+</body>
+</html>

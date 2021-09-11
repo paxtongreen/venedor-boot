@@ -1,0 +1,319 @@
+
+/* font-family: 'Fjalla One', sans-serif; */
+/* header */
+.header .section1{
+    background-color: #F5F5F5;
+    border-top: 2px solid #35B5BE;
+}
+
+.header .section1 .img-fluid{
+    opacity: 0.6;
+    width: 12%;
+}
+
+.header .nav-link{
+    color: gray;
+}
+
+.login{
+    text-align: end;
+    margin-top: 7.5px;
+}
+
+.login-link{
+    color: #13bfcb;
+}
+
+.dropdown-link{
+    color: gray;
+}
+
+.language{
+    background-color: #F5F5F5;
+    color: gray;
+}
+
+.us-dollar{
+    border: none;
+    background-color: #F5F5F5;
+    color: gray;
+}
+
+.items{
+    background-color: #13bfcb;
+    border: none;
+    color: white;
+}
+
+.buttons{
+    margin-left: 46%;
+    margin-top: 20px;
+}
+
+.buttons .button{
+    margin: 3px;
+}
+
+.section3 .nav-link{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: #13bfcb;
+}
+
+.search{
+    border: 1px solid lightgray;
+    border-radius: 0;
+}
+
+.search-logo{
+    width: 28px;
+    margin-top: -3px;
+}
+
+.search-bar{
+    margin-left: 66.7%;
+}
+
+.section2{
+    margin-top: 20px;
+}
+
+.section3{
+    margin-top: 20px;
+}
+
+.section3 .nav-link{
+    color: darkslategray;
+}
+
+.section3 .nav-link:hover{
+    color: #13bfcb;
+}
+/* close header */
+
+/* main */
+.section1 .carousel{
+}
+
+.main .section1{
+    background-color: #ecebe9;
+}
+.main .section1 .carousel-control-prev{
+    border: 1px solid red;
+}
+
+.main .section1 h2{
+    text-align: left;
+}
+
+.main .section1 p{
+    color: darkgray;
+    text-align: left;
+}
+
+.new{
+    padding: 20px;
+    background: #13bfcb;
+    width: 110px;
+}
+
+.men-collection{
+    padding: 20px;
+    margin-top: -10px;
+    width: 265px;
+    background: darkslategray;
+}
+
+.carousel-caption{
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+
+.venedor-model{
+    margin-left: 300px;
+}
+
+.shop-now{
+    margin-left: -305px;
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.carousel .carousel-indicators li {
+    background-color: darkslategray;
+}
+.carousel .carousel-indicators li.active {
+    background-color: #13bfcb;
+}
+
+.main .section2 {
+    text-align: center;
+}
+/* close main */
+
+/* footer */
+
+.add-to-cart{
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.section3 .carousel{
+    text-align: center;
+}
+
+.latest{
+    border-left: 3px solid #13bfcb;
+    padding-left: 5px;
+}
+.section3{
+    margin-top: 40px;
+}
+.section4{
+    margin-top: 70px;
+}
+
+.section5{
+    margin-top: 70px;
+}
+.welcome-to-venedor{
+    border-left: 3px solid #13bfcb;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+.section4 .text{
+    color: gray;
+}
+
+.section5 .carousel{
+    text-align: center;
+}
+
+.section6{
+    margin-top: 80px;
+}
+/* close footer */
+
+.footer{
+    margin-top: 100px;
+}
+
+.footer .section1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #d6d6d6;
+}
+
+.sign-up{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#sign-up-bar{
+    border: 4px solid #eddd6d;
+    background: #d6d6d6;
+    padding: 3px;
+    width: 300px;
+}
+
+.sign-up-submit{
+    background: darkslategray;
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    width: 100px;
+}
+
+.sub-section2{
+    text-align: end;
+}
+
+.footer .section2{
+    background: #434b4d;
+    margin-top: 0px;
+    padding: 20px;
+    color: white;
+    border-bottom: 1px solid #353b3d;
+}
+
+.footer .section3{
+    color: white;
+    background: #434b4d;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.colophon-text{
+    text-align: end;
+    opacity: 0.8;
+}
+
+.footer h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    opacity: 0.9;
+}
+
+.section2 ul{
+    list-style-type: square;
+    color: #13bfcb;
+    line-height: 3;
+    margin-left: -20px;
+    opacity: 0.8;
+}
+
+.footer-list-link{
+    color: white;
+}
+
+.footer-list-link:hover{
+    color: #13bfcb;
+}
+
+.name{
+    text-align: center;
+    opacity: 0.8;
+}
+
+.time{
+    opacity: 0.4;
+}
+
+.footer .section2 .text{
+    opacity: 0.8;
+}
+
+.people{
+    opacity: 0.8;
+}
+
+.footer .section2{
+    padding-top: 50px;
+}
+
+.thumbs-up{
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.like{
+    margin-left: 53px;
+    border: none;
+    color: white;
+    background: #13bfcb;
+}
